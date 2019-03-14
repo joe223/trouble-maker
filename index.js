@@ -4,7 +4,7 @@ const fontCarrier = require('./font-carrier')
 const font = fontCarrier.create()
 
 //创建空白字体，使用svg生成字体
-const transFont = fontCarrier.transfer('./source.ttf')
+const transFont = fontCarrier.transfer(__dirname + '/source.ttf')
 const list = [
     "0123456789",
     "abcdefghijklmnopqrstuvwxyz",
@@ -15,7 +15,7 @@ const l = list.reduce((arr, item) => {
   return arr.concat(shuffle(item))
 }, [])
 const map = {}
-const path = './newFont/font'
+const path = __dirname + '/newFont/font'
 
 //测试对象set
 list.join('').split('').map((item, index) => {
