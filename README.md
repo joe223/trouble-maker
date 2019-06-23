@@ -1,8 +1,8 @@
 # trouble-maker
 
-随机生成不同文字映射字库文件，例如：正常字库文件source.ttf中 `的` unicode 是 `\u7684`,那么随机生成的 font.ttf 中 unicode 可能是 `\u8862` 或者其他随机值。
+随机生成不同文字映射字库文件，例如：正常字库文件 source.ttf 中 `的` unicode 是 `\u7684`，那么随机生成的 font.ttf 中 unicode 可能是 `\u8862` 或者其他随机值。
 
-当通过浏览器加载字库并设置字体 `font-family` 之后，原文中“的”不一定会再显示为“的”。
+当通过浏览器加载字库并设置字体 `font-family` 之后，原文中 “的” 不一定会再显示为 “的”。
 
 ![eg](./example.png)
 
@@ -34,11 +34,11 @@ $ node index.js
 └── source.ttf
 ```
 
-- `newFont`：生成的随机字库，`font.json` 为变更的文字映射，key 为显示值，value 为实际值
-- index.js 生成字库的核心代码
-- font-carrier 生成器，该 SDK 有做代码调整，请勿使用 NPM 下的 font-carrier 库
-- index.html 示例文件
-- source.ttf 原字库文件
+- newFont：生成的随机字库，`font.json` 为变更的文字映射，key 为显示值，value 为实际值
+- index.js：生成字库的核心代码
+- font-carrier：生成器，该 SDK 有做代码调整，请勿使用 NPM 下的 font-carrier 库
+- index.html：示例文件
+- source.ttf：原字库文件
 
 ## 文字映射规则
 
