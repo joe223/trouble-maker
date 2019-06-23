@@ -1,8 +1,6 @@
 const fs = require('fs')
 const fontCarrier = require('./font-carrier')
-
 const font = fontCarrier.create()
-
 //创建空白字体，使用svg生成字体
 const transFont = fontCarrier.transfer(__dirname + '/source.ttf')
 const list = [
@@ -37,7 +35,3 @@ function shuffle (str) {
   }
   return clone
 }
-
-// str.filter((item, index) => {
-//   return str.indexOf(item) != index
-// })
